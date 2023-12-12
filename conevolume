@@ -1,0 +1,29 @@
+/*
+ * Description: This program inputs the radius of a cone
+ * and then uses it to compute the volume of the cone. 
+ */
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    double radius; // Declare radius
+    double height; // Declare area
+    double volumeCone;
+    final double PI = 3.14159;
+
+    //Create a scanner object for input
+    Scanner input = new Scanner(System.in);
+    // Input a radius
+    System.out.println("Enter the radius of the base of the cone: ");
+    radius = input.nextDouble();
+   
+    System.out.println("Enter the height of the cone");
+    height= input.nextDouble();
+
+    // Compute area
+    volumeCone =  PI*radius*radius*height/3.0;
+
+    // Display results
+    System.out.println("The volume for the cone is " +
+      volumeCone);
+  }
+}
